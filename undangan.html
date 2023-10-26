@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        h1{
+            font-family: 'Lobster', sans-serif;
+            font-weight: 100;
+            font-size: 1.5vw;
+        }
+        h2{
+            font-size: 3vw;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Pacifico', cursive;
+        }
+        p{
+            font-size: 1.2vw;
+            font-family: 'Libre Baskerville', serif;
+        }
+        body,html{ min-height: 100%; height: 100%;}
+
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div.container {
+            min-width: 300px;
+            max-width: 500px;
+            margin: 0px auto;
+        }
+        nav {
+            height: 60px;
+            min-width: 500px;
+            display: flex;
+            background-color: greenyellow;
+            justify-content: space-evenly;
+            align-items: center;
+            text-decoration: none;
+            bottom: 0px;
+            position: fixed;
+            background-image: linear-gradient(to right, #fdcefb, #fdc8fa, #fdc1f9, #febbf8, #feb4f7, #feb0f7, #feabf7, #fea7f7, #fda4f9, #fca1fb, #fb9efd, #f99bff);
+            background-size: 400% 400%;
+            animation-name: animate;
+            animation-duration: 10s;
+            animation-iteration-count:infinite;
+            animation-timing-function: ease;
+        }
+        nav a{
+            font-size: 18pt;
+            text-decoration: none;
+        }
+        section.page {
+            width: 100%;
+            min-height: 100vh;
+            background-color: salmon;
+            margin-bottom: 0.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(flowers.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex-direction: column;
+        }
+
+        section.page > div > p, section.page > div > h1{
+            text-align: center;
+        }
+
+        section.page.one{
+            gap: 3.7vw;
+        }
+        section.page.one img{
+            border-radius: 50%;
+            height: 25%;
+            width: 50%;
+
+        }
+        section.page.one > div > h1 {
+            font-size: 30pt;
+        }
+        section.page.two {
+            justify-content: space-evenly;
+        }
+        div.card {
+            padding: 10pt;
+            max-width: 250pt;
+            min-height: 300pt;
+            border-radius: 50px;
+            background-color: rgb(240, 101, 173);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        p, h1 {
+            text-align: center;
+        }
+
+        div.circle {
+            width: 150pt;
+            height: 150pt;
+            border-radius: 75pt;
+            background-color: yellow;
+            margin-bottom: 50px;
+        }
+
+        section.page.two {
+            justify-content: space-evenly;
+            padding: 20px;
+            gap: 0.7vw;
+        }
+        section.page.two div.circle{
+            background-image: url(cewek.jpeg);
+        }
+        section.page.three div.circle{
+            background-image: url(cowok.avif);
+            background-size: 135%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div.line
+         {
+            width: 200px;
+            height: 3px;
+            margin: 10px auto;
+            background-color: black;
+         }
+         section.page.three {
+            gap: 1vw;
+         }
+         div.ayat p{
+            font-size: 0.8vw;
+         }
+         section.page.four p{
+            font-size: 1.6vw;
+         }
+    
+         div.card.khusus{
+            padding: 10pt;
+            height: 40vw;
+            width: 30vw;
+            border-radius: 50px;
+            background-color: rgb(240, 101, 173);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+         }
+         div.card.khusus h2{
+            font-weight: 100;
+         }
+         div.line{
+            width: 50%;
+         }
+         h2{
+            font-size: 1.8vw;
+         }
+         /* section.page.two h2{
+            background-color: rgb(240, 231, 216);
+            border-radius: 25px 25px;
+
+         }
+         section.page.three h2{
+            background-color: rgb(240, 231, 216);
+            border-radius: 25px 25px;
+         } */
+         div.back{
+            background-color: rgb(240, 231, 216);
+            border-radius: 25px 25px;
+            width: 12vw;
+         }
+         div.back h2{
+            text-align: center;
+            font-weight: 150;
+            text-shadow: white;
+         }
+         html{scroll-behavior: smooth;}
+         @keyframes animate{
+        0%{
+             background-position: 0 50%;
+        }
+        50%{
+             background-position: 100% 50%;
+        }
+        100%{
+              background-position: 0 50%;
+        }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="mobile">
+            <!-- <a href=""></a> -->
+            <a id="page one" href="#home">✨</a>
+            <a id="page two" href="#cewek">👸</a>
+            <a id="page three" href="#cowok">🤴</a>
+            <a id="page four" href="#tempat">💒</a>
+        </nav>
+        <section class="page one" id="home">
+            <div class="title">
+                <p>The wedding of</p>
+                <h1>Bride and Groom</h1>
+            </div>
+            <img src="teddy-bears.avif" alt="">
+            <div class="guest-name">
+                <p>Kepada Yth</p>
+                <p>Apin, S.Pd</p>
+            </div>
+        </section>
+        <section class="page two" id="cewek">
+            <div class="back"><h2>The Beloved</h2></div>
+            <h1>Bride </h1>
+            <p>Selamat berbahagia. Pernikahan adalah gerbang menuju kehidupan penuh misteri. Selami, arungi, lintasi, dan jalani dengan optimistis dan penuh rasa syukur kepada Tuhan.</p>
+            <div class="card">
+                <div class="circle"></div>
+                <h1>Miss Hillary Sumthing, S.Pd</h1>
+            <div class="line"></div>
+            <p>Putri Pertama</p>
+            <p>Bapak Harry</p>
+            <p>&</p>
+            <p>Ibu Summi</p>
+        </section>
+    <section class="page three" id="cowok">
+        <div class="back"><h2>The Beloved</h2></div>
+        <h1>Groom</h1>
+        <div class="ayat">
+        <p>"Dan dari rusuk yang diambil Tuhan Allah dari manusia itu, dibangun-Nyalah seorang perempuan, lalu dibawa-Nya kepada manusia itu. Lalu berkatalah manusia itu, 'Inilah dia, tulang dari tulangku dan daging dari dagingku. Ia akan dinamai perempuan, sebab ia diambil dari laki-laki.' Sebab itu, seorang laki-laki akan meninggalkan ayahnya dan ibunya dan bersatu dengan isterinya sehingga keduanya menjadi satu daging." (Kejadian 2:22–24).</p>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <h1>Mister Billy Jill Bob, S.Pd            </h1>
+        <div class="line"></div>
+        <p>Putra Pertama</p>
+        <p>Bapak Bill</p>
+        <p>&</p>
+        <p>Ibu Jill</p></section>
+    <section class="page four" id="tempat">
+        <div class="card khusus">
+            <h2>Tanggal 📅</h2>
+            <p>Jumat, 30 Februari 2030</p>
+            <div class="line"></div>
+            <h2>Pukul ⏲</h2>
+            <p>10.00 WIB s/d Selesai</p>
+            <div class="line"></div>
+            <h2>Tempat 💒</h2>
+            <p>Ballroom Rajawali Palembang</p>
+        </div>
+    </section>
+</div>
+    
+</body>
+</html>
